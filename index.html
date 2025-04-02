@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Storage Box Stickers</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Material Icons (both filled and outlined versions) -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
@@ -15,11 +17,11 @@
 <body>
     <div class="controls">
         <h1>Storage Box Stickers</h1>
-        <p>Select which stickers to print and specify quantities:</p>
+        <p>Select stickers, specify quantities, and customize your storage labels</p>
         
         <div class="utility-buttons">
-            <button id="toggle-all-btn">Toggle All Checkboxes</button>
-            <button id="reset-quantities-btn">Reset All Quantities to 1</button>
+            <button id="toggle-all-btn"><i class="material-icons">check_box</i> Toggle All</button>
+            <button id="reset-quantities-btn"><i class="material-icons">restart_alt</i> Reset Quantities</button>
         </div>
         
         <div class="sticker-selection">
@@ -109,9 +111,13 @@
             </div>
         </div>
         <div class="options-container">
-            <label class="option-label"><input type="checkbox" id="outline-icons"> Use outline icons</label>
+            <label class="option-label">
+                <input type="checkbox" id="outline-icons"> 
+                <span>Use outline icons</span>
+                <i class="material-icons-outlined" style="margin-left: 5px;">format_shapes</i>
+            </label>
         </div>
-        <button id="print-btn">Print Stickers</button>
+        <button id="print-btn"><i class="material-icons">print</i> Print Stickers</button>
     </div>
 
     <div class="print-area">
