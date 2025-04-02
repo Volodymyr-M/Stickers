@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Box Stickers</title>
+    <!-- Material Icons (both filled and outlined versions) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- Font Awesome for specific icons (both solid and regular) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="controls">
+        <h1>Storage Box Stickers</h1>
+        <p>Select which stickers to print and specify quantities:</p>
+        
+        <div class="utility-buttons">
+            <button id="toggle-all-btn">Toggle All Checkboxes</button>
+            <button id="reset-quantities-btn">Reset All Quantities to 1</button>
+        </div>
+        
+        <div class="sticker-selection">
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="tools" checked> Tools</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="tools">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="furniture" checked> Furniture</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="furniture">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="clothing-female" checked> Clothing, Female</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="clothing-female">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="clothing-male" checked> Clothing, Male</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="clothing-male">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="shoes-female" checked> Shoes, Female</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="shoes-female">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="shoes-male" checked> Shoes, Male</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="shoes-male">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="gardening" checked> Gardening</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="gardening">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="electronics" checked> Electronics</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="electronics">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="construction" checked> Construction</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="construction">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="sleeping" checked> Sleeping</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="sleeping">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="bags" checked> Bags</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="bags">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="kitchen" checked> Kitchen</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="kitchen">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="bathroom" checked> Bathroom</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="bathroom">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="decoration" checked> Decoration</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="decoration">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="christmas" checked> Christmas</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="christmas">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="dining" checked> Dining</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="dining">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="office-supplies" checked> Office Supplies</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="office-supplies">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="bicycle" checked> Bicycle</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="bicycle">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="car" checked> Car</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="car">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="book" checked> Book</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="book">
+            </div>
+            <div class="sticker-item">
+                <label><input type="checkbox" data-sticker="sports" checked> Sports</label>
+                <input type="number" min="1" value="1" class="quantity-input" data-sticker="sports">
+            </div>
+        </div>
+        <div class="options-container">
+            <label class="option-label"><input type="checkbox" id="outline-icons"> Use outline icons</label>
+        </div>
+        <button id="print-btn">Print Stickers</button>
+    </div>
+
+    <div class="print-area">
+        <!-- Stickers will be generated here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
